@@ -1,0 +1,312 @@
+body,
+html {
+   font-family: 'Kumbh Sans', sans-serif;
+   margin: 0 auto;
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+#menu {
+   display: flex;
+   justify-content: space-evenly;
+   text-decoration: none;
+   align-items: center;
+   margin-right: 15em;
+}
+
+.item {
+   display: flex;
+   justify-content: end;
+   align-items: center;
+}
+
+#panier {
+   padding-right: 3em;
+}
+
+#logo {
+   display: flex;
+   align-items: center;
+}
+
+.fa-bars {
+   font-size: 20px;
+   padding-left: 4px;
+   padding-right: 10px;
+}
+
+.show {
+   transform: translateY(0) !important;
+}
+
+/*--------------------------------------------------------------------------Main---------------------------------------------------------------------------*/
+.pop {
+   padding-left: 45em;
+}
+
+.pop_up {
+   margin-left: 11.5em;
+   padding-top: 2em;
+}
+
+.reponse {
+   margin-left: 4.5em;
+}
+
+.pop_texte {
+   padding-top: 3em;
+   margin-left: 3.5em;
+}
+
+.pop_logo {
+   margin-left: 11em;
+   padding-top: 5em;
+   color: white;
+}
+
+#email.h2 {
+   color: blue;
+}
+
+#email {
+   display: none;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   width: 500px;
+   height: 400px;
+   color: white;
+   background-color: black;
+   position: absolute;
+   transform: translate();
+   border-radius: 10px;
+   border-color: #FF7E18;
+}
+
+#mark {
+   color: white;
+}
+
+.shop {
+   padding-top: 5em;
+   width: 100%;
+   max-width: 1015px;
+}
+
+#images {
+   flex-wrap: wrap;
+}
+
+.titre {
+   width: 440px;
+}
+
+#small img {
+   margin: 11px;
+}
+
+#title {
+
+   color: #FF7E18;
+}
+
+.texte {
+   display: flex;
+   align-items: center;
+   margin-top: 2em;
+}
+
+#reduc {
+   margin-left: 1em;
+   background-color: #FFEEE2;
+   color: #FF7E18;
+   border-radius: 10px;
+   width: 35px;
+}
+
+del {
+   padding-bottom: 1em;
+   color: #B6BCC8;
+}
+
+.big-orange {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 272px;
+   background-color: #FF7E18;
+   border-radius: 10px;
+   height: 56px;
+   color: white;
+}
+
+.big {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 157px;
+   background-color: #F6F8FD;
+   border-radius: 10px;
+   height: 56px;
+}
+
+#ajouter {
+   color: #FF7E18;
+   cursor: pointer;
+}
+
+#retirer {
+   color: #FF7E18;
+   cursor: pointer;
+}
+
+#points {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+/*-------------------------------Responsive------------------------------------------------*/
+.sneaker_end {
+   margin: 0 auto;
+   bottom: 0;
+   position: absolute;
+   background-color: black;
+   width: 100%;
+}
+
+.sneaker_end p {
+   color: white;
+   text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+
+   header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   #images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   #small {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   nav {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px groove #E4E9F2;
+      width: 1010px;
+      padding-top: 2em;
+      padding-bottom: 2em;
+      padding-left: 1em;
+   }
+
+   #menu a {
+      margin-left: 2em;
+   }
+
+   .titre {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+   }
+
+   #menu a:hover {
+      border-bottom: 3px solid #FF7E18;
+   }
+
+   #menu a {
+      margin: 0px 10px;
+   }
+
+   .shop {
+      display: flex;
+      margin: 0 auto;
+   }
+
+   #bars {
+      display: none;
+   }
+
+   #croix {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 900px) {
+   #menu {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 0;
+      left: 0;
+      transform: translateY(-100%);
+      background-color: black;
+      width: 50%;
+      padding-left: 1em;
+
+   }
+
+   #menu a {
+      color: white;
+      margin: 20px 0px;
+   }
+
+   #menu a:hover {
+      color: #FF7E18;
+   }
+
+   nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+   }
+
+   #small {
+      display: none;
+   }
+
+   .titre {
+      padding-left: 1em;
+   }
+
+   .big-orange {
+      width: 372px;
+   }
+
+   .big {
+      width: 372px;
+   }
+
+   .sneaker_end {
+      position: relative;
+      height: 2em;
+   }
+
+   .pop {
+      padding-left: 0em;
+   }
+
+   #points {
+      display: flex;
+      flex-direction: column;
+   }
+}
